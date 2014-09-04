@@ -1,0 +1,24 @@
+{
+  "name": "CSS410_Demo",
+  "version": "0.0.1",
+  "description": "A simple demo demostrating how simple social engineering can capture valuable user information. A basic representation of data leakage.",
+  "main": "server",
+  "dependencies": {
+    "tiny-router": "^0.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "facebook",
+    "social",
+    "engineering",
+    "cloud",
+    "security",
+    "internet",
+    "security"
+  ],
+  "author": "Carlos Martin",
+  "license": "MIT"
+}

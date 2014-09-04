@@ -1,0 +1,25 @@
+<div class="profile_img">
+    <img class="img-responsive img-circle" ng-src="http://graph.facebook.com/{{user.id}}/picture?width=250">
+    <h3>{{user.name}}</h3>
+    <p>{{user.location.name}}</p>
+</div>
+<div class="basic_info">
+    <ul class="list-inline">
+        <li>
+            <i class="fa fa-calendar fa-2x"></i>
+            <b>{{user.birthday}}</b>
+        </li>
+        <li>
+            <i class="fa fa-envelope fa-2x"></i>
+            <b>{{user.email}}</b>
+        </li>
+        <li>
+            <i class="fa fa-heart fa-2x"></i>
+            <b>{{user.relationship_status}}</b>
+        </li>
+        <li>
+            <i class="fa fa-2x" ng-class="{'fa-male':user.gender=='male','fa-female':user.gender=='female'}"></i>
+            <b>{{user.gender}}</b>
+        </li>
+    </ul>
+</div>

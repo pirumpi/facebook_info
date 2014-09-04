@@ -1,0 +1,39 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    background-image: url('../img/Backgrounds.jpg');
+    background-size: 100%;
+}
+
+a > img { width: 222px; }
+
+.title{
+    text-align: center;
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+}
+.login_img{
+    margin-bottom: 10px;
+}
+
+.main_container{
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 650px;
+    position: relative;
+}
+.profile_img { position: relative; top: 80px; text-align: center; font-family: 'Audiowide';}
+.profile_img > img { margin-left: auto; margin-right: auto; }
+
+.basic_info { position: relative; top: 153px;}
+.basic_info > ul { margin-right: auto; margin-left: auto; width: 80%; text-align: center; }
+.basic_info > ul li { text-align: center; border-left: 1px solid; padding-left: 30px; padding-right: 30px; color: #21608B; }
+.basic_info > ul li:first-child { border-left: 0; }
+.basic_info b { display: block; padding-top: 5px;}
+
+.right_menu { position: absolute; right: 0; top:0; width: 150px; height: 100%; background-color: #7A7777; border-radius: 0 5px 5px 0;}
+.left_panel { margin-right: 150px; width: auto; position: relative; }
