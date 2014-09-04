@@ -1,5 +1,6 @@
-var router = require('tiny-router');
+var express = require('express');
+var app = express();
 
-router.use('static', {path: __dirname + '/public'});
+app.use(express.static(__dirname + '/public'));
 
-router.listen(8080);
+app.listen(8080);

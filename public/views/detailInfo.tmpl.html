@@ -1,0 +1,61 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img ng-src="http://graph.facebook.com/{{user.id}}/picture?width=110&height=110" alt="...">
+                <div class="caption">
+                    <h3>{{user.name}}</h3>
+                    <p>{{user.bio}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4" ng-if="user.relationship_status=='Married'">
+            <div class="thumbnail">
+                <img ng-src="http://graph.facebook.com/{{user.significant_other.id}}/picture?width=110&height=110" alt="...">
+                <div class="caption">
+                    <h3>{{user.significant_other.name}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <tbody>
+            <tr ng-if="user.relationship_status=='Married'">
+                <td>Married to:</td>
+                <td>{{user.significant_other.name}}</td>
+            </tr>
+            <tr>
+                <td>Birthday:</td>
+                <td>{{user.birthday}}</td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>{{user.gender}}</td>
+            </tr>
+            <tr ng-if="user.education.length>0">
+                <td>Education:</td>
+                <td>Attended {{user.education.length}} educational institutions</td>
+            </tr>
+            <tr ng-if="user.work.length>0">
+                <td>Work:</td>
+                <td>Has worked for {{user.work.length}} company</td>
+            </tr>
+            <tr>
+                <td>FB Id:</td>
+                <td>{{user.id}}</td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td>{{user.location.name}}</td>
+            </tr>
+            <tr>
+                <td>Locale:</td>
+                <td>{{user.locale}}</td>
+            </tr>
+            <tr>
+                <td>Total Friends:</td>
+                <td>{{user.friendsCount}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

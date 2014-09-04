@@ -1,0 +1,16 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4" ng-repeat="education in user.education">
+            <div class="thumbnail">
+                <img ng-src="http://graph.facebook.com/{{education.school.id}}/picture?width=110&height=110" alt="family">
+                <div class="caption">
+                    <h3>{{education.type}}</h3>
+                    <p>
+                        <strong>{{education.school.name}}</strong>
+                        <br/>
+                        <strong>{{education.year.name}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

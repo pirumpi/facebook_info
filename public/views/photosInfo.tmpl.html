@@ -1,0 +1,12 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4" ng-repeat="photo in user.photos">
+            <div class="thumbnail">
+                <img ng-src="{{photo.picture}}" alt="photos">
+                <div class="caption">
+                    <p><strong>{{photo.name}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

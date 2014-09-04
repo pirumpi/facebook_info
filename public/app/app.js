@@ -1,5 +1,5 @@
 var app = angular.module('css410', ['ui.router'])
-    .value('settings', {appId: '1509442325935853', xfbml: true, version: 'v2.0'})
+    .value('settings', {appId: '1509442325935853', xfbml: true, version: 'v2.1'})
     .value('permission', '')
     .run(function($rootScope, $window, settings){
         $window.fbAsyncInit = function() {
@@ -31,10 +31,31 @@ var app = angular.module('css410', ['ui.router'])
               templateUrl: 'views/info.tmpl.html',
               controller: 'InfoCtrl'
       })
-          .state('info.basic',{
-              url: '/basic',
-              templateUrl: 'views/basicInfo.tmpl.html'
-          });
+      .state('info.basic',{
+          url: '/basic',
+          templateUrl: 'views/basicInfo.tmpl.html'
+      })
+      .state('info.detail',{
+          url: '/detail',
+          templateUrl: 'views/detailInfo.tmpl.html'
+      })
+      .state('info.family',{
+          url: '/family',
+          templateUrl: 'views/familyInfo.tmpl.html'
+      })
+      .state('info.work',{
+          url: '/work',
+          templateUrl: 'views/workInfo.tmpl.html'
+      })
+      .state('info.education',{
+          url: '/education',
+          templateUrl: 'views/educationInfo.tmpl.html'
+      })
+      .state('info.photos',{
+          url: '/photos',
+          templateUrl: 'views/photosInfo.tmpl.html'
+      });
+
 
       $urlRouterProvider.otherwise('/login');
   }]);

@@ -1,0 +1,12 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4" ng-repeat="family in user.familyList">
+            <div class="thumbnail">
+                <img ng-src="http://graph.facebook.com/{{family.id}}/picture?width=110&height=110" alt="family">
+                <div class="caption">
+                    <p><strong>{{family.name}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

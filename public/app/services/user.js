@@ -1,7 +1,6 @@
 app.factory('User', function(){
     var user = {
-        info: null,
-        photos:[]
+        info: null
     };
 
     return user;
